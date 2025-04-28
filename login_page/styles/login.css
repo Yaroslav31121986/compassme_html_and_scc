@@ -1,7 +1,6 @@
 /* Ensure body layout allows header at top, footer at bottom, main fills rest */
 html, body {
     height: 100%;
-    margin: 0;
 }
 body {
     display: flex;
