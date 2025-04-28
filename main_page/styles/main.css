@@ -11,7 +11,7 @@ html {
 }
 *, *::before, *::after {
     box-sizing: border-box;
-  }  
+}  
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -26,6 +26,20 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+/* Base text link — use this for any non-button links */
+.text-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 1rem;                 
+    font-weight: 600; 
+}
+.text-link:hover {
+    color: var(--color-accent);
+    text-decoration: none; /* гарантируем отсутствие подчёркивания */
+}
+
+  
 /* Base class for all buttons */
 .btn {
     display: inline-block;
@@ -83,18 +97,6 @@ body {
     display: flex;
     gap: 4px;
     margin-left: auto;     
-}
-.nav-right a,
-.nav-main a  {
-    text-decoration: none;           
-    font-size: 1rem;                 
-    font-weight: 600;                
-    color: var(--color-primary);
-    transition: color 0.2s;
-}
-.nav-right a:hover,
-.nav-main a:hover {
-    color: var(--color-accent);
 }
 .search-form button:hover {
     color: var(--color-light);
@@ -282,23 +284,6 @@ body {
     padding-top: 20px;
     font-size: 1rem;
 }
-/* Tablet: 600px+ */
-@media (min-width: 600px) {
-body { font-size: 1.0625rem;}
-/*  Allow more cards per row, increase gap */
-.links-grid {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 32px;
-}
-/* Slightly larger gap between items */
-.image-grid {
-    gap: 30px;
-}
-/* Wider padding using percentage rather than fixed px */
-.links-section {
-    padding: 80px 8%;
-}
-}
 /* Desktop: 1024px+ */
 @media (min-width: 1024px) {
 body { font-size: 1.125rem;}
@@ -331,124 +316,4 @@ body { font-size: 1.125rem;}
     display: block;
     margin: 0 auto 12px;
 }
-
 }
-/*  Mobile-only */
-@media (max-width: 599px) {
-/* Adjust font sizes for very narrow screens */
-.header-title {
-    font-size: 2rem;
-}
-.section-title {
-    font-size: 2rem;
-}
-.image-grid {
-    /* вместо строки: делаем колонку */
-    flex-direction: column;
-    /* можно сохранить небольшой gap */
-    gap: 16px;
-  }
-
-  .image-item {
-    /* отменяем flex-поведение по ширине */
-    flex: none;
-    min-width: auto;
-    /* на всю ширину контейнера */
-    width: 100%;
-  }
-}
-/* Mobile-extra-small: ≤400px */
-@media (max-width: 400px) {
-.header-top.container {
-    flex-direction: column;     
-    align-items: center;         
-    gap: 8px;
-}
-.nav-right {
-    order: 1;                   
-    margin-left: 0;           
-    width: 100%;    
-    justify-content: center;
-    gap: 6px;
-}
-/* shrink logo */
-.header-logo-img {
-    width: 80px;
-    height: auto;
-}
-/* make search-section full-width on extra-small screens */
-.container,
-.container-search-panel,
-.links-section {
-    padding-left: 0;
-    padding-right: 0;
-}
-.header-title {
-    font-size: 2rem;
-}
-.section-title {
-    font-size: 1.75rem;
-}
-.search-form {
-    flex-direction: column;
-    gap: 8px;
-}
-.search-form input,
-.search-form button {
-    width: 100%;
-    font-size: 1rem;
-    padding: 12px;
-}
-.links-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-}
-.image-item img {
-    width: 60px;     
-    display: block; 
-    margin: 0 auto 12px;
-}
-.image-item .image-title {
-    font-size: 1.25rem;
-}
-.footer-about p,
-.footer-contact p,
-.footer-nav a,
-.footer-bottom p {
-    font-size: 0.875rem;
-}
-.site-footer .container {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-  .footer-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-}
-  .footer-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    padding: 0;
-    margin: 0;
-}
-  .footer-social .social-icons {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-  .footer-social img {
-    width: 20px;
-    height: 20px;
-}
-  .footer-about p,
-  .footer-contact p,
-  .footer-nav a,
-  .footer-bottom p {
-    font-size: 0.75rem;
-    line-height: 1.4;
-  }
-}
-
-  
