@@ -48,7 +48,7 @@ header,
 .container-search-panel {
     max-width: 1440px;
     width: 100%;
-    padding: 10 10px;
+    padding: 0 10px;
 }
 /* Base class for text-links */
 .text-link {
@@ -77,9 +77,12 @@ header,
 }
 /* Search-button */
 .btn-search {
-    font-size: 1.125rem;
+    font-size: 2rem;
     padding: 12px 24px; 
     min-width: 120px; 
+    flex: 1;
+    min-width: 0;
+    width: auto;
 }
 /* Start-service */
 .btn-start {
@@ -123,7 +126,8 @@ header,
 .nav-languages {
     display: flex;
     gap: 4px;
-    margin-left: auto;     
+    margin-left: auto;   
+    padding-right: 24px;  
 }
 .language {
     background: none;
@@ -155,8 +159,8 @@ header,
     padding-bottom: 20px;
 }
 .search-form input {
-    flex: 0 1 auto;
-    width: 80%;
+    flex: 0 0 80%;
+    width: auto;
     padding: 30px 16px;
     font-size: 1.125rem;
     border: 1px solid #ccc;
@@ -218,6 +222,9 @@ header,
 .link-item:hover {
     color: var(--color-accent);
 }
+.link-item .icon-wrapper img {
+    margin-bottom: 8px;
+}
 .button-container {
     margin-top: 40px;
     text-align: center;
@@ -230,7 +237,6 @@ header,
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-right: 12px;
 }
 .image-section {
     background: var(--color-light);
@@ -281,7 +287,7 @@ header,
     padding: 40px 0;
 }
 .site-footer .container {
-    padding: 0 100px;
+    padding: 0 24px;
 }
 .footer-grid {
     display: flex;
