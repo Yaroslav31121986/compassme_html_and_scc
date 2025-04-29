@@ -222,9 +222,6 @@ header,
 .link-item:hover {
     color: var(--color-accent);
 }
-.link-item .icon-wrapper img {
-    margin-bottom: 8px;
-}
 .button-container {
     margin-top: 40px;
     text-align: center;
