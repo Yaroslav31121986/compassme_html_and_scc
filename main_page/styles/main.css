@@ -280,7 +280,7 @@ Header,
     color: var(--color-primary);
     margin: 8px 0 4px;
 }
-.GuideDescription {
+.BaseText {
     color: var(--color-primary);
     margin-bottom: 40px;
     text-align: center;

@@ -68,19 +68,7 @@ body {
     border-color: var(--color-accent);
 }
 .LoginForm button {
-    width: 100%;
     padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: 600;
-    background-color: var(--color-accent);
-    color: var(--color-light);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.LoginForm button:hover {
-    background-color: var(--color-primary);
 }
 .LoginDivider {
     height: 1px;
@@ -88,15 +76,9 @@ body {
     margin: 20px 0;
     width: 100%;
 }
-.LoginLinks {
+.LoginFormWrapper .TextLink {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    font-size: 0.875rem;
-}
-.LoginLinks a {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: 600;
+    gap: 16px;
 }

@@ -1,12 +1,18 @@
-/* Только для группы с чекбоксом */
 .FormGroupTerms {
-    flex-direction: row;      /* из колонки в строку */
-    align-items: center;      /* выравнять чекбокс и текст по базовой линии */
-    gap: 8px;                 /* отступ между ними */
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    gap: 8px;
   }
-  
-  /* Сбрасываем маргины у <label> */
-  .FormGroupTerms label {
-    margin: 0;
+  .FormGroupTerms input[type="checkbox"] {
+    width: auto;
   }
-  
+  .TextLinkTerms {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+  .TextLinkTerms:hover {
+    color: rgba(0, 157, 220, 0.7);
+    text-decoration: underline;
+  }
+

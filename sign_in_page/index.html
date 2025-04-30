@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../sign_in_page/styles/sign_in.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+<div class="MainContainer">
 <body>
     <!-- Header-->
 <header class="Header">
@@ -40,7 +41,7 @@
         <form class="LoginForm" action="#" method="post">
         <h1 class="LoginFormTitle">Registration</h1>
         <div class="FormGroup">
-            <input type="password" id="name" name="name" placeholder="Enter your name" required>
+            <input type="name" id="name" name="name" placeholder="Enter your name" required>
         </div>
         <div class="FormGroup">
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
@@ -49,16 +50,16 @@
             <input type="password" id="password" name="password" placeholder="Enter your password" required>
         </div>
         <div class="FormGroup">
-            <input type="password" id="City" name="city" placeholder="Enter your city" required>
+            <input type="city" id="City" name="city" placeholder="Enter your city" required>
         </div>
         <div class="FormGroup FormGroupTerms">
           <input type="checkbox" id="terms" name="terms" required>
-          <label for="terms">I agree to the <a href="#" class="TextLink terms">CompassMe Terms</a></label>
+          <label for="terms">I agree to the <a href="#" class="TextLinkTerms">CompassMe Terms</a></label>
         </div>
         
         <button class="Btn BtnPrimary" type="submit">Confirm</button>
-        <div class="LoginLinks">
-            <p>Already registered? <a href="/login" class="TextLink">Login</a></p>
+        <div class="FormGroup FormGroupTerms">
+          <span class="BaseText">I agree to the <a href="/login" class="TextLink">Login</a></span>
         </div>
         </form>
     </div>
@@ -103,5 +104,6 @@
       </div>
     </div>
   </footer>
+</div>
 </body>
 </html>
