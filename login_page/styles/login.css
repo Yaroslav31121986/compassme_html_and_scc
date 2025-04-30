@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.MainContent {
+    flex: 1 0 auto;
+    display: flex;
+}
+
+.LoginSection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-light);
+    padding: 40px 20px;
+}
+.LoginFormWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.LoginForm {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.LoginFormTitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+.FormGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 6px;
+}
+.LoginForm label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+.LoginForm input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.LoginForm input:focus {
+    border-color: var(--color-accent);
+}
+.LoginForm button {
+    padding: 12px 24px;
+}
+.LoginDivider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+    width: 100%;
+}
+.LoginFormWrapper .TextLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
