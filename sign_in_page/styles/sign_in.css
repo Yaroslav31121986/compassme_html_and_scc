@@ -1,0 +1,12 @@
+/* Только для группы с чекбоксом */
+.FormGroupTerms {
+    flex-direction: row;      /* из колонки в строку */
+    align-items: center;      /* выравнять чекбокс и текст по базовой линии */
+    gap: 8px;                 /* отступ между ними */
+  }
+  
+  /* Сбрасываем маргины у <label> */
+  .FormGroupTerms label {
+    margin: 0;
+  }
+  

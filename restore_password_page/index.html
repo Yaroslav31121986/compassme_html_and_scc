@@ -7,83 +7,81 @@
   <link rel="stylesheet" href="../styles/normalize.css">
   <link rel="stylesheet" href="../main_page/styles/main.css">
   <link rel="stylesheet" href="../login_page/styles/login.css">
-  <link rel="stylesheet" href="../restore_password_page/styles/restore_password.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header-->
-  <header class="header">
-    <div class="header-top container">
+  <header class="Header">
+    <div class="HeaderTop Container">
         <a href="../main_page/index.html">
-          <img class="header-logo-img" src="../images/CompassMe_Logo.svg" alt="CompassMe logo image" />
+          <img class="HeaderLogoImg" src="../images/CompassMe_Logo.svg" alt="CompassMe logo image" />
         </a>
-        <nav class="nav-header">
-          <a href="#" class="text-link">Create Service</a>
-          <a href="#" class="text-link">Find Service</a>
+        <nav class="NavHeader">
+          <a href="#" class="TextLink">Create Service</a>
+          <a href="#" class="TextLink">Find Service</a>
         </nav>
-          <div class="user-links"> 
-              <button class="language" aria-label="Change language to English">EN</button>
-              <button class="language" aria-label="Change language to Finish">FI</button>
-              <button class="language" aria-label="Change language to Russian">RU</button>
-              <button class="language" aria-label="Change language to Ukrainian">UA</button>
-              <a href="#" class="text-link sign-in">Sign In</a>
-              <span aria-hidden="true" class="nav-divider">/</span>
-              <a href="/login_page/index.html" class="text-link login">Login</a>
+          <div class="UserLinks"> 
+              <button class="Language" aria-label="Change language to English">EN</button>
+              <button class="Language" aria-label="Change language to Finish">FI</button>
+              <button class="Language" aria-label="Change language to Russian">RU</button>
+              <button class="Language" aria-label="Change language to Ukrainian">UA</button>
+              <a href="../sign_in_page/index.html" class="TextLink SignIn">Sign In</a>
+              <span aria-hidden="true" class="NavDivider">/</span>
+              <a href="/login_page/index.html" class="TextLink Login">Login</a>
           </div>
       </div>
   </header>
   <!-- Main Content-->
-  <main id="main-content">
-    <section class="login-section">
-        <div class="login-form-wrapper">
-          <form class="login-form" action="#" method="post">
-            <h1 class="login-form-title">Reset password</h1>
+  <main class="MainContent">
+    <section class="LoginSection">
+        <div class="LoginFormWrapper">
+          <form class="LoginForm" action="#" method="post">
+            <h1 class="LoginFormTitle">Reset password</h1>
     
-            <div class="form-group">
+            <div class="FormGroup">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
-            <button class="btn btn-primary" type="submit">Reset</button>
+            <button class="Btn BtnPrimary" type="submit">Reset</button>
           </form>
         </div>
-      </section>
-          
+      </section>  
   </main>
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
+  <footer class="SiteFooter">
+    <div class="Container">
+      <div class="FooterGrid">
+        <div class="FooterAbout">
           <h3>About Us</h3>
           <p>CompassMe connects service providers and seekers in one platform.<br>
             Our mission is to simplify finding and offering services.</p>
         </div>
-        <div class="footer-nav">
+        <div class="FooterNav">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#" class="text-link">Home</a></li>
-            <li><a href="#" class="text-link">Services</a></li>
-            <li><a href="#" class="text-link">Find Service</a></li>
-            <li><a href="#" class="text-link">Create Service</a></li>
-            <li><a href="#"class="text-link" >Login</a></li>
+            <li><a href="#" class="TextLink">Home</a></li>
+            <li><a href="#" class="TextLink">Services</a></li>
+            <li><a href="#" class="TextLink">Find Service</a></li>
+            <li><a href="#" class="TextLink">Create Service</a></li>
+            <li><a href="#"class="TextLink" >Login</a></li>
           </ul>
         </div>
-        <div class="footer-contact">
+        <div class="FooterContact">
           <h3>Contact Us</h3>
           <p>123 Main Street, City, Country</p>
           <p>Email: info@compassme.com</p>
           <p>Phone: +123-456-7890</p>
         </div>
-        <div class="footer-social">
+        <div class="FooterSocial">
           <h3>Follow Us</h3>
-          <div class="social-icons">
+          <div class="SocialIcons">
             <a href="#"><img src="../images/Facebook_logo.svg" alt="Facebook"></a>
             <a href="#"><img src="../images/X_logo.svg" alt="X/Twitter"></a>
             <a href="#"><img src="../images/Instagram_logo.svg" alt="Instagram"></a>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="FooterBottom">
         <p>&copy; 2025 CompassMe. All rights reserved.</p>
       </div>
     </div>
