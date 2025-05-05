@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CompassMe</title>
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../main_page/styles/main.css">
+    <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../login_page/styles/login.css">
     <link rel="stylesheet" href="../sign_in_page/styles/sign_in.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<div class="MainContainer">
 <body>
+<div class="MainContainer"></div>
     <!-- Header-->
 <header class="Header">
     <div class="HeaderTop Container">
@@ -30,7 +30,7 @@
 
             <a href="../sign_in_page/index.html" class="TextLink SignIn">Sign In</a>
             <span aria-hidden="true" class="NavDivider">/</span>
-            <a href="/login_page/index.html" class="TextLink Login">Login</a>
+            <a href="/login_page/index.html" class="TextLink">Login</a>
         </div>
     </div>
 </header>
@@ -41,16 +41,16 @@
         <form class="LoginForm" action="#" method="post">
         <h1 class="LoginFormTitle">Registration</h1>
         <div class="FormGroup">
-            <input type="name" id="name" name="name" placeholder="Enter your name" required>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
         <div class="FormGroup">
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required>
         </div>
         <div class="FormGroup">
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <input type="text" id="password" name="password" placeholder="Enter your password" required>
         </div>
         <div class="FormGroup">
-            <input type="city" id="City" name="city" placeholder="Enter your city" required>
+            <input type="text" id="city" name="city" placeholder="Enter your city" required>
         </div>
         <div class="FormGroup FormGroupTerms">
           <input type="checkbox" id="terms" name="terms" required>
@@ -58,8 +58,8 @@
         </div>
         
         <button class="Btn BtnPrimary" type="submit">Confirm</button>
-        <div class="FormGroup FormGroupTerms">
-          <span class="BaseText">I agree to the <a href="/login" class="TextLink">Login</a></span>
+        <div class="AlreadyRegistered">
+          <label for="terms">Already registered? <a href="#" class="TextLinkTerms">Login</a></label>
         </div>
         </form>
     </div>
