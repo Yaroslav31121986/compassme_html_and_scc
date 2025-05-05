@@ -2,9 +2,7 @@
 html {
     box-sizing: border-box;
 }
-*, *::before, *::after {
-    box-sizing: border-box;
-}  
+
 /* Search-button */
 .BtnSearch {
     font-size: 2rem;

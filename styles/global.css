@@ -11,6 +11,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em; 
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+}  
 .MainContainer {
     min-width: 1024px;
 }
