@@ -60,7 +60,6 @@ Header,
 }
 .TextLink:hover {
     color: var(--color-accent);
-    color: rgba(0, 157, 220, 0.7);
     text-decoration: none;
 }
 .UserLinks {

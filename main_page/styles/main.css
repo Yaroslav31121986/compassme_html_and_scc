@@ -16,7 +16,6 @@ html {
     font-size: 0.875rem;
     font-weight: 500;         
     padding: 8px 24px;
-    background-color: rgba(0, 157, 220, 0.2);       
     border-radius: 50px;  
     text-decoration: none;  
     background-color: var(--color-accent);
