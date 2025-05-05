@@ -15,4 +15,8 @@
     color: rgba(0, 157, 220, 0.7);
     text-decoration: underline;
   }
-
+  .AlreadyRegistered {
+    display: inline-flex;
+    width: auto;
+    justify-content: center;
+  }
