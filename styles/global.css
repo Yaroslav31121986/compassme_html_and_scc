@@ -155,3 +155,6 @@ Header,
     padding-top: 20px;
     font-size: 1rem;
 }
+.FooterAbout {
+    flex: 1 1 20%;
+}
