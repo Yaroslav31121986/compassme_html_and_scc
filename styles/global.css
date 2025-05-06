@@ -60,7 +60,6 @@ Header,
 }
 .TextLink:hover {
     color: var(--color-accent);
-    color: rgba(0, 157, 220, 0.7);
     text-decoration: none;
 }
 .UserLinks {
@@ -155,4 +154,7 @@ Header,
     border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: 20px;
     font-size: 1rem;
+}
+.FooterAbout {
+    flex: 1 1 20%;
 }
