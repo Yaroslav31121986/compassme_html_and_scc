@@ -41,6 +41,10 @@ Header,
 .SignIn {
     margin-left: 32px;               
 }
+.MainContent {
+    flex: 1 0 auto;
+    display: flex;
+}
 .NavDivider {
     margin: 0 8px;            
 }

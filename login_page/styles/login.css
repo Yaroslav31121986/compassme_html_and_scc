@@ -5,10 +5,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-.MainContent {
-    flex: 1 0 auto;
-    display: flex;
-}
+
 
 .LoginSection {
     flex: 1;
