@@ -30,7 +30,7 @@ body {
     gap: 40px; 
     margin-left: 20px;  
 }
-Header,
+.Header,
 .SearchSection,
 .LinksSection,
 .ImageSection,
