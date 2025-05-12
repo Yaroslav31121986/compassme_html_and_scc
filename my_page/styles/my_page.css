@@ -1,28 +1,17 @@
-.ImageGrid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; 
-    justify-content: flex-start; 
-    align-items: stretch;
-} 
-.ImageItem {
+.MyAccountGridItem {
     flex: 1 1 124px;
-    min-width: 124px;
-    text-align: center;
-    display: flex;    
-    flex-direction: column;
-    justify-content: space-between;
     border: 1px solid #ccc;
     border-radius: 8px; 
     padding: 12px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    align-items:baseline;
 }
-.ImageItem:hover {
+.MyAccountGridItem:hover {
   border-color: var(--color-accent);
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
-.ImageItem img {
+.MyAccountGridItem img {
     width: 64px;
     height: 64px;
     margin-bottom: 16px;
@@ -31,9 +20,6 @@
   text-align: left;
 }
 .MainSection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-top: 64px;
 }
 .ProfileBlock .Photo img {
@@ -43,4 +29,11 @@
 }
 .ImageSection {
   padding: 64px 0;
+}
+.MyAccountLink {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+.NameAndMail {
+  padding-left: 12px;
 }
