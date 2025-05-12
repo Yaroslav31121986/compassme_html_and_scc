@@ -1,22 +1,23 @@
 .FormGroupTerms {
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-    gap: 8px;
-  }
-  .FormGroupTerms input[type="checkbox"] {
-    width: auto;
-  }
-  .TextLinkTerms {
-    color: var(--color-accent);
-    text-decoration: none;
-  }
-  .TextLinkTerms:hover {
-    color: rgba(0, 157, 220, 0.7);
-    text-decoration: underline;
-  }
-  .AlreadyRegistered {
-    display: inline-flex;
-    width: auto;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  gap: 8px;
+}
+.TextLinkTerms {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.TextLinkTerms:hover {
+  color: rgba(0, 157, 220, 0.7);
+  text-decoration: underline;
+}
+.AlreadyRegistered {
+  display: inline-flex;
+  width: auto;
+  justify-content: center;
+}
+.UnderText{
+    font-weight: 600;
+    font-size: 1rem;
+}
