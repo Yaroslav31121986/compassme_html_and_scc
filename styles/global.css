@@ -3,6 +3,9 @@
     --color-accent:  #009ddc;
     --color-light:   #f5f5f5;
 }
+html, body {
+  height: 100%;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
@@ -15,14 +18,13 @@ body {
 }  
 .MainContainer {
     min-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 /* Header */
 .Header {
     padding: 5px 0;  
-}
-.HeaderTop {
-    display: flex;
-    align-items: center;
 }
 .NavHeader {
     display: flex;
@@ -30,18 +32,19 @@ body {
     margin-left: 20px;  
 }
 .Header,
+.HeaderTop,
 .SearchSection,
 .LinksSection,
 .ImageSection,
-.SiteFooter {
-    display: flex;                
-    justify-content: center;         
-}
+.SiteFooter,
 .Section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* Section */
+
 .SectionForm {
     flex: 1;
     background-color: var(--color-light);
@@ -51,8 +54,9 @@ body {
     margin-left: 32px;               
 }
 .MainContent {
-    flex: 1 0 auto;
-    display: flex;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .NavDivider {
     margin: 0 8px;            
@@ -67,13 +71,17 @@ body {
     width: auto;
 }
 /* Grid */
+.Grid,
+.GridRow,
+.GridLinkItem,
+.GridIconWrapper {
+  display: flex;
+}
 .Grid {
-    display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 .GridRow {
-    display: flex;
     justify-content: space-between;  
     gap: 16px;
     width: 100%;
@@ -81,7 +89,6 @@ body {
 }
 .GridLinkItem {
     flex: 1;                       
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -96,7 +103,6 @@ body {
     width: 40px;
     height: 40px;
     flex: 0 0 40px;
-    display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -172,13 +178,14 @@ body {
     color: var(--color-accent);
     text-decoration: none;
 }
-.UserLinks {
+/* Languages */
+.UserLanguage {
     display: flex;
     gap: 4px;
     margin-left: auto;   
     padding-right: 24px;  
 }
-.UserLinks .Language:hover {
+.UserLanguage .Language:hover {
     text-decoration: underline;
 }
 .Language {
@@ -225,7 +232,6 @@ body {
     background-color: var(--color-primary);
     color: var(--color-light);
     padding: 40px 0;
-    margin-top: 32px;
 }
 .SiteFooter .Container {
     padding: 0 24px;
@@ -272,4 +278,285 @@ body {
 }
 .FooterAbout {
     flex: 1 1 20%;
+}
+
+/* Main Page */
+/* Search-button */
+.BtnSearch {
+    font-size: 2rem;
+    padding: 12px 24px; 
+    min-width: 120px; 
+    flex: 1;
+    width: auto;
+}
+/* Start-service */
+.BtnStart {
+    font-size: 0.875rem;
+    font-weight: 500;         
+    padding: 8px 24px;
+    border-radius: 50px;  
+    text-decoration: none;  
+    background-color: var(--color-accent);
+    color: var(--color-light);
+}
+.BtnStart:hover {
+    background-color: rgba(0, 157, 220, 0.7);
+}
+  /* See All */
+.BtnSeeAll {
+    display: inline-flex;      
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 12px 30px;      
+    font-size: 1rem;  
+    border-radius: 4px;
+}
+.SearchForm button:hover {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+}
+.Title {
+  font-size: clamp(2rem, 5vw, 3rem);
+    font-size: 3rem;  
+    font-weight: 700; 
+    line-height: 1.2;         
+    color: var(--color-primary); 
+}
+/* Search Panel Container */
+.SearchForm {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 20px;
+}
+.InputFieldSearchForm {
+    flex: 0 0 80%;
+    padding: 30px 16px;
+    font-size: 1.125rem;
+}
+.SearchSection {               
+    flex-direction: column;                         
+    background: var(--color-light);
+    padding: 50px 50px;
+}
+.SearchSection .Container {
+    margin-bottom: 40px;         
+}
+.ContainerSearchPanel { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.LinksSection {
+    padding: 60px 5%;
+}
+.Title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 40px;
+    text-align: center;
+}
+.GuideSection {
+    background: var(--color-light);
+}
+.GuideItem {
+    flex: 1 1 200px;
+    min-width: 200px;
+    text-align: center;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+}
+.GuideText {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 8px 0 4px;
+}
+.GuideIcon {
+    width: 80px;
+    display: block;
+}
+.GuideSection .GridIconWrapper {
+    width: 80px;
+    height: 80px;
+    flex: 0 0 80px; 
+}
+
+/* Sign In */
+
+.FormGroupTerms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  gap: 8px;
+}
+.UnderText{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Login */
+.LoginDivider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+    width: 100%;
+}
+.InputFormWrapper .TextLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* My Page */
+.MyAccountGridItem {
+    flex: 1 1 124px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    align-items:baseline;
+}
+.MyAccountGridItem:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.MyAccountGridItem img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+}
+.SettingText {
+  text-align: left;
+}
+.MainSection {
+  padding-top: 64px;
+}
+.ImageSection {
+  padding: 64px 0;
+}
+.MyAccountLink {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+.NameAndMail {
+  padding-left: 12px;
+}
+
+/* My Account Page Settings */
+
+.HeaderWelcome,
+.Title {
+    font-size: 3rem;  
+    font-weight: 700; 
+    line-height: 1.2;         
+}
+.ProfileBlock {
+  width: 100%;
+  display: flex;
+  margin: 1.25rem 0;
+}
+.ProfileBlock .AccountPhoto img {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+}
+.Title {
+    text-align: center;  
+}
+.UserInfoBlock {
+  width: 100%;
+}
+.FieldRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.FieldInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.FieldLabel {
+font-weight: 600;
+  text-align: right;
+  padding-right: 0.625rem;
+}
+.FieldValue {
+  color: #555;
+  flex: 1;
+}
+.EditButton {
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.EditButton:hover {
+  transform: scale(1.1);
+}
+.EditButton img {
+  width: 20px;
+  height: 20px;
+}
+.ClientInfoName {
+    flex: 0 0 150px;
+}
+.SettingsCheckbox {
+    text-align: right;
+}
+.Switch {
+  position: relative;
+  width: 50px;
+  height: 28px; 
+}
+.Slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+.Slider::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 3px; 
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform .3s;
+}
+.Switch input:checked + .Slider {
+  background-color: var(--color-accent);
+}
+.Switch input:checked + .Slider::before {
+  transform: translateX(22px);
+}
+.Switch input:focus + .Slider {
+  box-shadow: 0 0 1px var(--color-accent);
+}
+.VisuallyHidden {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0; 
 }
