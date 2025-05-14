@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CompassMe</title>
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../main_page/styles/main.css">
     <link rel="stylesheet" href="../styles/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -21,7 +20,7 @@
             <a href="#" class="TextLink">Create Service</a>
             <a href="#" class="TextLink">Find Service</a>
           </nav>
-            <div class="UserLinks"> 
+            <div class="UserLanguage"> 
                 <button class="Language" aria-label="Change language to English">EN</button>
                 <button class="Language" aria-label="Change language to Finish">FI</button>
                 <button class="Language" aria-label="Change language to Russian">RU</button>
@@ -34,10 +33,11 @@
             </div>
         </div>
     </header>
+    <main class="MainContent">
         <!-- Search Panel -->
     <section class="Section SearchSection">
         <div class="Container">
-            <h1 class="HeaderTitle">Connecting those who are looking for each other</h1>
+            <h1 class="Title">Connecting those who are looking for each other</h1>
         </div>
         <div class="Container ContainerSearchPanel">
             <form class="SearchForm">
@@ -50,7 +50,7 @@
         <!-- Service categories --> 
     <section class="Section LinksSection">
         <div class="Container">
-            <h2 class="SectionTitle">Services near to you 999</h2>
+            <h2 class="Title">Services near to you 999</h2>
             <div class=" Grid">
               <div class="GridRow">
                 <!-- 1 row -->
@@ -89,9 +89,8 @@
             <!-- How it works --> 
     <section class="Section GuideSection">
         <div class="Container">
-          <h2 class="SectionTitle">How it works</h2>
-          <div class="Grid">
-            <div class="GridRow">
+          <h2 class="Title">How it works</h2>
+          <div class="Grid GridRow">
               <div class="GuideItem">
                 <div class="GridIconWrapper">
                   <img class="GuideIcon" src="../images/CreateAnOrder_logo.svg" alt="createAnOrder">
@@ -114,10 +113,10 @@
                 <h3 class="GuideText">Close the order</h3>
                 <p class="BaseText">Leave feedback and ratings for the work done</p>
               </div>
-            </div>
           </div>
         </div>
       </section>
+    </main>
 <!-- Footer -->
 <footer class="SiteFooter">
     <div class="Container">
