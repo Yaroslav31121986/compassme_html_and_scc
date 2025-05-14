@@ -421,6 +421,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px; 
     padding: 12px;
+    margin-bottom: 24px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     align-items:baseline;
@@ -495,6 +496,7 @@ font-weight: 600;
 .FieldValue {
   color: #555;
   flex: 1;
+  white-space: nowrap;
 }
 .EditButton {
   background: none;

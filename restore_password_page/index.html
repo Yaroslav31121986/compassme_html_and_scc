@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
   <link rel="stylesheet" href="../styles/global.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div class="MainContainer">
-  <!-- Header-->
-  <header class="Header">
-    <div class="HeaderTop Container">
+  <div class="MainContainer">
+    <!-- Header-->
+    <header class="Header">
+      <div class="HeaderTop Container">
         <a href="../main_page/index.html">
           <img class="HeaderLogoImg" src="../images/CompassMe_Logo.svg" alt="CompassMe logo image" />
         </a>
@@ -20,70 +22,71 @@
           <a href="#" class="TextLink">Create Service</a>
           <a href="#" class="TextLink">Find Service</a>
         </nav>
-          <div class="UserLanguage"> 
-              <button class="Language" aria-label="Change language to English">EN</button>
-              <button class="Language" aria-label="Change language to Finish">FI</button>
-              <button class="Language" aria-label="Change language to Russian">RU</button>
-              <button class="Language" aria-label="Change language to Ukrainian">UA</button>
-              <a href="../sign_in_page/index.html" class="TextLink SignIn">Sign In</a>
-              <span aria-hidden="true" class="NavDivider">/</span>
-              <a href="/login_page/index.html" class="TextLink">Login</a>
-          </div>
+        <div class="UserLanguage">
+          <button class="Language" aria-label="Change language to English">EN</button>
+          <button class="Language" aria-label="Change language to Finish">FI</button>
+          <button class="Language" aria-label="Change language to Russian">RU</button>
+          <button class="Language" aria-label="Change language to Ukrainian">UA</button>
+          <a href="../sign_in_page/index.html" class="TextLink SignIn">Sign In</a>
+          <span aria-hidden="true" class="NavDivider">/</span>
+          <a href="/login_page/index.html" class="TextLink">Login</a>
+        </div>
       </div>
-  </header>
-  <!-- Main Content-->
-  <main class="MainContent">
-    <section class="Section SectionForm">
-          <form class="InputForm" action="#" method="post">
-            <h1 class="InputFormTitle">Reset password</h1>
-    
-            <div class="FormGroup">
-              <label for="email">Email</label>
-              <input class="InputField" type="text" name="email" placeholder="Enter your email" required>
+    </header>
+    <!-- Main Content-->
+    <main class="MainContent">
+      <section class="Section SectionForm">
+        <form class="InputForm" action="#" method="post">
+          <h1 class="InputFormTitle">Reset password</h1>
+
+          <div class="FormGroup">
+            <label for="email">Email</label>
+            <input class="InputField" type="text" name="email" placeholder="Enter your email" required>
+          </div>
+          <button class="Btn BtnPrimary" type="submit">Reset</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="SiteFooter">
+      <div class="Container">
+        <div class="FooterGrid">
+          <div class="FooterAbout">
+            <h3>About Us</h3>
+            <p>CompassMe connects service providers and seekers in one platform.<br>
+              Our mission is to simplify finding and offering services.</p>
+          </div>
+          <div class="FooterNav">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#" class="TextLink">Home</a></li>
+              <li><a href="#" class="TextLink">Services</a></li>
+              <li><a href="#" class="TextLink">Find Service</a></li>
+              <li><a href="#" class="TextLink">Create Service</a></li>
+              <li><a href="#" class="TextLink">Login</a></li>
+            </ul>
+          </div>
+          <div class="FooterContact">
+            <h3>Contact Us</h3>
+            <p>123 Main Street, City, Country</p>
+            <p>Email: info@compassme.com</p>
+            <p>Phone: +123-456-7890</p>
+          </div>
+          <div class="FooterSocial">
+            <h3>Follow Us</h3>
+            <div class="SocialIcons">
+              <a href="#"><img src="../images/Facebook_logo.svg" alt="Facebook"></a>
+              <a href="#"><img src="../images/X_logo.svg" alt="X/Twitter"></a>
+              <a href="#"><img src="../images/Instagram_logo.svg" alt="Instagram"></a>
             </div>
-            <button class="Btn BtnPrimary" type="submit">Reset</button>
-          </form>
-      </section>  
-  </main>
-  <!-- Footer -->
-  <footer class="SiteFooter">
-    <div class="Container">
-      <div class="FooterGrid">
-        <div class="FooterAbout">
-          <h3>About Us</h3>
-          <p>CompassMe connects service providers and seekers in one platform.<br>
-            Our mission is to simplify finding and offering services.</p>
-        </div>
-        <div class="FooterNav">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#" class="TextLink">Home</a></li>
-            <li><a href="#" class="TextLink">Services</a></li>
-            <li><a href="#" class="TextLink">Find Service</a></li>
-            <li><a href="#" class="TextLink">Create Service</a></li>
-            <li><a href="#"class="TextLink" >Login</a></li>
-          </ul>
-        </div>
-        <div class="FooterContact">
-          <h3>Contact Us</h3>
-          <p>123 Main Street, City, Country</p>
-          <p>Email: info@compassme.com</p>
-          <p>Phone: +123-456-7890</p>
-        </div>
-        <div class="FooterSocial">
-          <h3>Follow Us</h3>
-          <div class="SocialIcons">
-            <a href="#"><img src="../images/Facebook_logo.svg" alt="Facebook"></a>
-            <a href="#"><img src="../images/X_logo.svg" alt="X/Twitter"></a>
-            <a href="#"><img src="../images/Instagram_logo.svg" alt="Instagram"></a>
           </div>
         </div>
+        <div class="FooterBottom">
+          <p>&copy; 2025 CompassMe. All rights reserved.</p>
+        </div>
       </div>
-      <div class="FooterBottom">
-        <p>&copy; 2025 CompassMe. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
 </body>
+
 </html>

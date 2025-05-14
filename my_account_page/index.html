@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,318 +9,320 @@
     <link rel="stylesheet" href="../styles/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div class="MainContainer">
-    <!-- Header-->
-    <header class="Header">
-      <div class="HeaderTop Container">
-          <a href="../main_page/index.html">
-            <img class="HeaderLogoImg" src="../images/CompassMe_Logo.svg" alt="CompassMe logo image" />
-          </a>
-          <nav class="NavHeader">
-            <a href="#" class="TextLink">Create Service</a>
-            <a href="#" class="TextLink">Find Service</a>
-          </nav>
-            <div class="UserLanguage"> 
-                <button class="Language" aria-label="Change language to English">EN</button>
-                <button class="Language" aria-label="Change language to Finish">FI</button>
-                <button class="Language" aria-label="Change language to Russian">RU</button>
-                <button class="Language" aria-label="Change language to Ukrainian">UA</button>
+    <div class="MainContainer">
+        <!-- Header-->
+        <header class="Header">
+            <div class="HeaderTop Container">
+                <a href="../main_page/index.html">
+                    <img class="HeaderLogoImg" src="../images/CompassMe_Logo.svg" alt="CompassMe logo image" />
+                </a>
+                <nav class="NavHeader">
+                    <a href="#" class="TextLink">Create Service</a>
+                    <a href="#" class="TextLink">Find Service</a>
+                </nav>
+                <div class="UserLanguage">
+                    <button class="Language" aria-label="Change language to English">EN</button>
+                    <button class="Language" aria-label="Change language to Finish">FI</button>
+                    <button class="Language" aria-label="Change language to Russian">RU</button>
+                    <button class="Language" aria-label="Change language to Ukrainian">UA</button>
 
-                <a href="../sign_in_page/index.html" class="TextLink SignIn">Sign In</a>
-                <span aria-hidden="true" class="NavDivider">/</span>
-                <a href="../login_page/index.html" class="TextLink">Login</a>
-            </div>
-        </div>
-    </header>
-      <!-- Main Section -->
-<main class="MainContent">
-    <section class="Section SectionForm">
-        <div class="Container">
-            <div class="WelcomeSection">
-                <h1 class="HeaderWelcome">Hei Name!</h1>
-                <p>
-                Your profile on CompassMe is based on information collected from your CompassMe account.
-                The more information you share, the better we can tailor CompassMe to suit you.
-                <a href="#" class="TextLinkTerms">Read more about CompassMe account</a>
-                </p>
-            </div>
-            <div class="ProfileBlock">
-                <div class="AccountPhoto">
-                    <img src="/images/MyAccountIcon.svg" alt="MyAccountIcon">
-                    <div class="ButtonContainer">
-                        <a href="#" class="Btn BtnPrimary">Change</a>
-                    </div>
+                    <a href="../sign_in_page/index.html" class="TextLink SignIn">Sign In</a>
+                    <span aria-hidden="true" class="NavDivider">/</span>
+                    <a href="../login_page/index.html" class="TextLink">Login</a>
                 </div>
             </div>
-        <!-- Personal information -->
-        <div class="InputFormWrapper">
-            <div class="UserInfoBlock">
-            <h1 class="Title">Personal information</h1>
-            <!-- Name -->
-            <div class="FieldRow">
-                <div class="FieldInfo">
-                    <div class="ClientInfoName">
-                        <span class="FieldLabel">Name</span>
+        </header>
+        <!-- Main Section -->
+        <main class="MainContent">
+            <section class="Section SectionForm">
+                <div class="Container">
+                    <div class="WelcomeSection">
+                        <h1 class="HeaderWelcome">Hei Name!</h1>
+                        <p>
+                            Your profile on CompassMe is based on information collected from your CompassMe account.
+                            The more information you share, the better we can tailor CompassMe to suit you.
+                            <a href="#" class="TextLinkTerms">Read more about CompassMe account</a>
+                        </p>
                     </div>
-                    <div >
-                            <span class="FieldValue">Max</span> 
-                    </div>
-                </div>
-                <button class="EditButton" aria-label="EditButton">
-                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                </button>
-            </div>
-            <!-- Last Name -->
-            <div class="FieldRow">
-                <div class="FieldInfo">
-                    <div class="ClientInfoName">
-                        <span class="FieldLabel">Last Name</span>
-                    </div>
-                        <div class="ClientInfo">
-                        <span class="FieldValue">Robbins</span>
-                        </div>
-                </div>
-                <button class="EditButton" aria-label="EditButton">
-                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                </button>
-            </div>
-            <!-- Nickname -->
-            <div class="FieldRow">
-                <div class="FieldInfo">
-                    <div class="ClientInfoName">
-                        <span class="FieldLabel">Nickname</span>
-                    </div>
-                    <div>
-                        <span class="FieldValue">Max123</span>
-                    </div>
-                </div>
-                <button class="EditButton" aria-label="EditButton">
-                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                </button>
-            </div>
-            <!-- Email -->
-            <div class="FieldRow">
-                <div class="FieldInfo">
-                    <div class="ClientInfoName">
-                        <span class="FieldLabel">Email</span>
-                    </div>
-                    <div>
-                        <span class="FieldValue">max@example.com</span>
-                    </div>
-                </div>
-                <button class="EditButton" aria-label="Change email">
-                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                </button>
-            </div>
-            <!-- Password -->
-            <div class="FieldRow">
-                <div class="FieldInfo">
-                    <div class="ClientInfoName">
-                        <span class="FieldLabel">Password</span>
-                    </div>
-                    <div>
-                        <span class="FieldValue">*******</span>
-                    </div>
-                </div>
-                <button class="EditButton" aria-label="Change email">
-                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                </button>
-            </div>
-            <!-- How Old -->
-            <div class="FieldRow">
-                <div class="FieldInfo">
-                    <div class="ClientInfoName">
-                        <span class="FieldLabel">Date of birth</span>
-                    </div>
-                    <div>
-                        <span class="FieldValue">30</span>
-                    </div>
-                </div>
-                <button class="EditButton" aria-label="Change Date of birth">
-                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                </button>
-            </div>
-            <!-- Sex -->
-            <div class="FieldRow">
-                <div class="FieldInfo">
-                    <div class="ClientInfoName">
-                        <span class="FieldLabel">Sex</span>
-                    </div>
-                    <div>
-                        <span class="FieldValue">Male</span>
-                    </div>
-                </div>
-                <button class="EditButton" aria-label="Change Date of birth">
-                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                </button>
-            </div>
-            <!-- Phone -->
-            <div class="FieldRow">
-                <div class="FieldInfo">
-                    <div class="ClientInfoName">
-                        <span class="FieldLabel">Phone</span>
-                    </div>
-                    <div>
-                        <span class="FieldValue">+3581234567</span>
-                    </div>
-                </div>
-                <button class="EditButton" aria-label="Change phone">
-                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                </button>
-            </div>
-            <!-- Address -->
-            <div class="FieldRow">
-                <div class="FieldInfo">
-                    <div class="ClientInfoName">
-                        <span class="FieldLabel">Street</span>
-                    </div>
-                    <div>
-                        <span class="FieldValue">Aleksanterinkatu 1</span>
-                    </div>
-                </div>
-                <button class="EditButton" aria-label="Change Street">
-                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                </button>
-            </div>
-            <!-- Index -->
-            <div class="FieldRow">
-                <div class="FieldInfo">
-                    <div class="ClientInfoName">
-                        <span class="FieldLabel">Postal code</span>
-                    </div>
-                    <div>
-                        <span class="FieldValue">123456</span>
-                    </div>
-                </div>
-                <button class="EditButton" aria-label="Change postal code">
-                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                </button>
-            </div>
-
-            <!-- City -->
-            <div class="FieldRow">
-                <div class="FieldInfo">
-                    <div class="ClientInfoName">
-                        <span class="FieldLabel">City</span>
-                    </div>
-                    <div>
-                        <span class="FieldValue">Helsinki</span>
-                    </div>
-                </div>
-                <button class="EditButton" aria-label="Change City">
-                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                </button>
-            </div>
-        </div>
-        </div>
-        <!-- Information about service provision -->
-        <div class="InputFormWrapper">
-            <div class="UserInfoBlock">
-                <h1 class="Title">Information about service provision</h1>
-                <!-- Education -->
-                <div class="FieldRow">
-                    <div class="FieldInfo">
-                        <div class="ClientInfoName">
-                            <span class="FieldLabel">Education</span>
-                        </div>
-                        <div >
-                                <span class="FieldValue">Teacher</span> 
-                        </div>
-                    </div>
-                    <button class="EditButton" aria-label="EditButton">
-                        <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                    </button>
-                </div>
-                <!-- Opening hours -->
-                <div class="FieldRow">
-                    <div class="FieldInfo">
-                        <div class="ClientInfoName">
-                            <span class="FieldLabel">Opening hours</span>
-                        </div>
-                            <div class="ClientInfo">
-                            <span class="FieldValue">8-16</span>
+                    <div class="ProfileBlock">
+                        <div class="AccountPhoto">
+                            <img src="/images/MyAccountIcon.svg" alt="MyAccountIcon">
+                            <div class="ButtonContainer">
+                                <a href="#" class="Btn BtnPrimary">Change</a>
                             </div>
-                    </div>
-                    <button class="EditButton" aria-label="EditButton">
-                        <img src="/images/ChangeIcon.svg" alt="ChangeIcon"/>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Account settings -->
-        <div class="InputFormWrapper">
-            <div class="UserInfoBlock">
-                <h1 class="Title">CompassMe Account Settings</h1>
-                <h2 class="Title">Notification</h2>
-                <!-- Notification -->
-                <div class="FieldRow">
-                    <div class="FieldInfo">
-                        <div class="ClientInfoName">
-                            <span class="FieldLabel">Notification</span>
                         </div>
                     </div>
-                    <label class="Switch">
-                        <input type="checkbox" class="VisuallyHidden" />
-                        <span class="Slider"></span>
-                    </label>
-                </div>
-                <!-- Privacy -->
-                <div class="FieldRow">
-                    <div class="FieldInfo">
-                        <div class="ClientInfoName">
-                            <span class="FieldLabel">Privacy</span>
+                    <!-- Personal information -->
+                    <div class="InputFormWrapper">
+                        <div class="UserInfoBlock">
+                            <h1 class="Title">Personal information</h1>
+                            <!-- Name -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Name</span>
+                                    </div>
+                                    <div>
+                                        <span class="FieldValue">Max</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="EditButton">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+                            <!-- Last Name -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Last Name</span>
+                                    </div>
+                                    <div class="ClientInfo">
+                                        <span class="FieldValue">Robbins</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="EditButton">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+                            <!-- Nickname -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Nickname</span>
+                                    </div>
+                                    <div>
+                                        <span class="FieldValue">Max123</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="EditButton">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+                            <!-- Email -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Email</span>
+                                    </div>
+                                    <div>
+                                        <span class="FieldValue">max@example.com</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="Change email">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+                            <!-- Password -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Password</span>
+                                    </div>
+                                    <div>
+                                        <span class="FieldValue">*******</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="Change email">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+                            <!-- How Old -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Date of birth</span>
+                                    </div>
+                                    <div>
+                                        <span class="FieldValue">30</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="Change Date of birth">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+                            <!-- Sex -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Sex</span>
+                                    </div>
+                                    <div>
+                                        <span class="FieldValue">Male</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="Change Date of birth">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+                            <!-- Phone -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Phone</span>
+                                    </div>
+                                    <div>
+                                        <span class="FieldValue">+3581234567</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="Change phone">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+                            <!-- Address -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Street</span>
+                                    </div>
+                                    <div>
+                                        <span class="FieldValue">Aleksanterinkatu 1</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="Change Street">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+                            <!-- Index -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Postal code</span>
+                                    </div>
+                                    <div>
+                                        <span class="FieldValue">123456</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="Change postal code">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+
+                            <!-- City -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">City</span>
+                                    </div>
+                                    <div>
+                                        <span class="FieldValue">Helsinki</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="Change City">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <label class="Switch">
-                        <input type="checkbox" class="VisuallyHidden" />
-                        <span class="Slider"></span>
-                    </label>
+                    <!-- Information about service provision -->
+                    <div class="InputFormWrapper">
+                        <div class="UserInfoBlock">
+                            <h1 class="Title">Information about service provision</h1>
+                            <!-- Education -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Education</span>
+                                    </div>
+                                    <div>
+                                        <span class="FieldValue">Teacher</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="EditButton">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+                            <!-- Opening hours -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Opening hours</span>
+                                    </div>
+                                    <div class="ClientInfo">
+                                        <span class="FieldValue">8-16</span>
+                                    </div>
+                                </div>
+                                <button class="EditButton" aria-label="EditButton">
+                                    <img src="/images/ChangeIcon.svg" alt="ChangeIcon" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Account settings -->
+                    <div class="InputFormWrapper">
+                        <div class="UserInfoBlock">
+                            <h1 class="Title">CompassMe Account Settings</h1>
+                            <h2 class="Title">Notification</h2>
+                            <!-- Notification -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Notification</span>
+                                    </div>
+                                </div>
+                                <label class="Switch">
+                                    <input type="checkbox" class="VisuallyHidden" />
+                                    <span class="Slider"></span>
+                                </label>
+                            </div>
+                            <!-- Privacy -->
+                            <div class="FieldRow">
+                                <div class="FieldInfo">
+                                    <div class="ClientInfoName">
+                                        <span class="FieldLabel">Privacy</span>
+                                    </div>
+                                </div>
+                                <label class="Switch">
+                                    <input type="checkbox" class="VisuallyHidden" />
+                                    <span class="Slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="SiteFooter">
+            <div class="Container">
+                <div class="FooterGrid">
+                    <div class="FooterAbout">
+                        <h3>About Us</h3>
+                        <p>CompassMe connects service providers and seekers in one platform.<br>
+                            Our mission is to simplify finding and offering services.</p>
+                    </div>
+                    <div class="FooterNav">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#" class="TextLink">Home</a></li>
+                            <li><a href="#" class="TextLink">Services</a></li>
+                            <li><a href="#" class="TextLink">Find Service</a></li>
+                            <li><a href="#" class="TextLink">Create Service</a></li>
+                            <li><a href="#" class="TextLink">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="FooterContact">
+                        <h3>Contact Us</h3>
+                        <p>123 Main Street, City, Country</p>
+                        <p>Email: info@compassme.com</p>
+                        <p>Phone: +123-456-7890</p>
+                    </div>
+                    <div class="FooterSocial">
+                        <h3>Follow Us</h3>
+                        <div class="SocialIcons">
+                            <a href="#"><img src="../images/Facebook_logo.svg" alt="Facebook"></a>
+                            <a href="#"><img src="../images/X_logo.svg" alt="X/Twitter"></a>
+                            <a href="#"><img src="../images/Instagram_logo.svg" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="FooterBottom">
+                    <p>&copy; 2025 CompassMe. All rights reserved.</p>
                 </div>
             </div>
-        </div>
-        </div>
-    </section>    
-</main>
-<!-- Footer -->
-    <footer class="SiteFooter">
-        <div class="Container">
-          <div class="FooterGrid">
-            <div class="FooterAbout">
-              <h3>About Us</h3>
-              <p>CompassMe connects service providers and seekers in one platform.<br>
-                Our mission is to simplify finding and offering services.</p>
-            </div>
-            <div class="FooterNav">
-              <h3>Quick Links</h3>
-              <ul>
-                <li><a href="#" class="TextLink">Home</a></li>
-                <li><a href="#" class="TextLink">Services</a></li>
-                <li><a href="#" class="TextLink">Find Service</a></li>
-                <li><a href="#" class="TextLink">Create Service</a></li>
-                <li><a href="#"class="TextLink" >Login</a></li>
-              </ul>
-            </div>
-            <div class="FooterContact">
-              <h3>Contact Us</h3>
-              <p>123 Main Street, City, Country</p>
-              <p>Email: info@compassme.com</p>
-              <p>Phone: +123-456-7890</p>
-            </div>
-            <div class="FooterSocial">
-              <h3>Follow Us</h3>
-              <div class="SocialIcons">
-                <a href="#"><img src="../images/Facebook_logo.svg" alt="Facebook"></a>
-                <a href="#"><img src="../images/X_logo.svg" alt="X/Twitter"></a>
-                <a href="#"><img src="../images/Instagram_logo.svg" alt="Instagram"></a>
-              </div>
-            </div>
-          </div>
-          <div class="FooterBottom">
-            <p>&copy; 2025 CompassMe. All rights reserved.</p>
-          </div>
-        </div>
-    </footer>
+        </footer>
     </div>
-    </body>
-    </html>
+</body>
+
+</html>
